@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    font-family: "Times New Roman", serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.tutorial {
+    width: 95%;
+    margin: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr; /* default telefon: 1 kolonë */
+    gap: 20px;
+}
+
+/* Tablet: 2 kolona */
+@media (min-width: 600px) {
+    .tutorial {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Kompjuter: 4 kolona */
+@media (min-width: 992px) {
+    .tutorial {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.step {
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.step img {
+    width: 100%;      /* merr gjithë hapësirën e kolonës */
+    height: auto;     /* ruan raportin */
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.step h3 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #444;
+}
+
+.step p {
+    text-align: left;
+    font-size: 15px;
+    color: #333;
+}
+
+/* Telefona – zvogëlo tekstin */
+@media (max-width: 599px) {
+    .step h3 {
+        font-size: 16px;
+    }
+    .step p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+}
+</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kategoria e kualifikimit</title>
+</head>
+<body>
+    <div class="tutorial">
+        <section class="step">
+            <h3>Figura 1</h3>
+            <img src="foto1.png" alt="Hapi 1">
+            <p>Në figurën 1 shikoni hapat që duhet të ndiqni:<br>
+            1. Zgjidhni menunë "Plani vjetor".</p>
+        </section>
+
+        <section class="step">
+            <h3>Figura 2</h3>
+            <img src="foto2.png" alt="Hapi 2">
+            <p>Në figurën 2 ju shfaqet ngarkesa juaj mësimore.<br>
+            2. Kliko "Përzgjidh dokumentin" tek lënda që do ngarkosh planin vjetor.</p>
+        </section>
+
+        <section class="step">
+            <h3>Figura 3</h3>
+            <img src="foto3.png" alt="Hapi 3">
+            <p>Në figurën 3 do gjeni planin vjetor që e keni në kompjuterin tuaj.<br>
+            3. Kliko skedarin që do ngarkosh në SMIP.<br>
+            4. Kliko komandën "Open".</p>
+        </section>
+
+        <section class="step">
+            <h3>Figura 4</h3>
+            <img src="foto4.png" alt="Hapi 4">
+            <p>5. Kliko "Dërgo dokumentin".<br>
+            Këtë veprim do bëni edhe për lëndët e tjera të ngarkesës tuaj mësimore.</p>
+        </section>
+    </div>
+</body>
+</html>
