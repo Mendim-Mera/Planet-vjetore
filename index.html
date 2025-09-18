@@ -15,22 +15,8 @@ body {
     margin: auto;
     padding: 20px;
     display: grid;
-    grid-template-columns: 1fr; /* default telefon: 1 kolonë */
+    grid-template-columns: 1fr; /* gjithmonë një kolonë */
     gap: 20px;
-}
-
-/* Tablet: 2 kolona */
-@media (min-width: 600px) {
-    .tutorial {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* Kompjuter: 4 kolona */
-@media (min-width: 992px) {
-    .tutorial {
-        grid-template-columns: repeat(4, 1fr);
-    }
 }
 
 .step {
@@ -43,8 +29,9 @@ body {
 }
 
 .step img {
-    width: 100%;      /* merr gjithë hapësirën e kolonës */
-    height: auto;     /* ruan raportin */
+    width: 100%;      /* merr gjithë gjerësinë e kolonës */
+    max-width: 500px; /* kufizon madhësinë në PC */
+    height: auto;
     margin-bottom: 10px;
     border-radius: 5px;
 }
@@ -78,6 +65,14 @@ body {
 </head>
 <body>
     <div class="tutorial">
+	 <section class="step">
+            <h1>SI TË NGARKONI PLANIN VJETOR NË SMIP</h1>
+            <p>Pasi të jeni loguar në SMIP në faqen e mësuesit do veproni si më poshtë.</p>
+	    <h3>Figura 1</h3>
+            <img src="foto1.png" alt="Hapi 1">
+            <p>Në figurën 1 shikoni hapat që duhet të ndiqni:<br>
+	    1. Zgjidhni menunë "Plani vjetor".<br>
+        </section>
         <section class="step">
             <h3>Figura 1</h3>
             <img src="foto1.png" alt="Hapi 1">
@@ -109,4 +104,3 @@ body {
     </div>
 </body>
 </html>
-
